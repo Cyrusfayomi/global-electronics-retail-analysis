@@ -158,7 +158,7 @@ The workbook was saved, closed, and reopened to check that the dashboard and fil
 - The source dataset's licence should be checked before redistributing the original data within the workbook.
 
 ## Project Structure
-
+```
 global-electronics-retail-analysis/
 ├── README.md
 ├── completed-workbook.xlsx
