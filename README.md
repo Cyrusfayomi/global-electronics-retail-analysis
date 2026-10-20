@@ -146,9 +146,7 @@ The workbook was saved, closed, and reopened to check that the dashboard and fil
 
 ### Dashboard Preview
 
-Add your dashboard screenshot to the repository as `images/executive-dashboard.png`, then use this Markdown:
-
-`![Global Electronics Retailer Executive Dashboard](images/executive-dashboard.png)`
+`![Global Electronics Retailer Executive Dashboard](images/Executive-dashboard.png)`
 
 ## Limitations
 
