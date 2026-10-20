@@ -146,7 +146,7 @@ The workbook was saved, closed, and reopened to check that the dashboard and fil
 
 ### Dashboard Preview
 
-`![Global Electronics Retailer Executive Dashboard](Executive-dashboard.png)`
+`![Global Electronics Retailer Executive Dashboard](executive-dashboard.png)`
 
 ## Limitations
 
