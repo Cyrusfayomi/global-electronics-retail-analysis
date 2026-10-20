@@ -159,12 +159,10 @@ The workbook was saved, closed, and reopened to check that the dashboard and fil
 
 ## Project Structure
 
-```text
 global-electronics-retail-analysis/
 ├── README.md
 ├── completed-workbook.xlsx
-└── images/
-    └── executive-dashboard.png
+└── executive-dashboard.png
 ```
 
 ## Conclusion
