@@ -2,11 +2,11 @@
 
 ## Project Overview
 
-This project explores sales performance for a fictional global electronics retailer using Microsoft Excel. The objective was to transform raw business data into meaningful insights by preparing and validating datasets, establishing relationships between related tables, analysing sales performance, and developing an interactive executive dashboard.
+This project explores sales performance for a fictional global electronics retailer using Microsoft Excel. The objective was to transform raw business data into meaningful insights by cleaning and validating datasets, establishing relationships between related tables, analysing sales performance, and developing an interactive executive dashboard.
 
 The analysis focuses on product performance, category revenue and profitability, geographic order distribution, monthly sales trends, and customer purchasing activity.
 
-The project demonstrates an end-to-end Excel analytics workflow, leveraging **Power Query** for data preparation, **Power Pivot and the Excel Data Model** for relational data modelling, and **PivotTables and PivotCharts** for analysis and visualisation.
+The project demonstrates an end-to-end Excel analytics workflow, leveraging **Power Query** for data cleaning and preparation, **Power Pivot and the Excel Data Model** for relational data modelling, and **PivotTables and PivotCharts** for data analysis and visualisation.
 
 ## Business Questions
 
@@ -24,7 +24,7 @@ The analysis was guided by the following business questions:
 | Tool or Technique | Application |
 |---|---|
 | Microsoft Excel | Data analysis, calculations, reporting, and dashboard development |
-| Power Query | Data inspection, transformation, data-type correction, and quality checks |
+| Power Query | Data cleaning, inspection, transformation, data-type correction, and quality checks |
 | Power Pivot | Relational data modelling and calculated columns |
 | Excel Data Model | Connecting and analysing multiple related tables |
 | PivotTables | Data aggregation, distinct order counts, and performance comparisons |
@@ -49,27 +49,27 @@ The dataset contains six tables:
 
 The dataset represents a fictional electronics retailer and is used for analytical and portfolio demonstration purposes.
 
-## Data Preparation and Modelling
+## Data Cleaning and Preparation
 
-### 1. Data Preparation with Power Query
+Data cleaning and preparation were carried out using **Power Query** to inspect, transform, and validate the source tables before analysis.
 
-Power Query was used to inspect, prepare, and validate the source tables before analysis.
+The following activities were performed:
 
-Key preparation activities included:
-
-- Correcting data types, particularly for order dates.
-- Setting the Quantity column to a whole-number data type.
-- Checking for missing values, errors, and duplicate records.
-- Retaining blank delivery dates rather than introducing assumed values.
-- Reviewing quantity values for potential return-related records.
+- Corrected data types, particularly for order dates.
+- Set the Quantity column to a whole-number data type.
+- Checked for missing values, errors, and duplicate records.
+- Retained blank delivery dates rather than introducing assumed values.
+- Reviewed quantity values for potential return-related records.
 
 The preparation process focused on maintaining the integrity of the original data while addressing identifiable data-type issues and assessing data quality.
 
-### 2. Relational Data Modelling with Power Pivot
+## Data Modelling
 
-The prepared tables were loaded into the Excel Data Model, where relationships were established between the Sales table and its corresponding dimension tables.
+After preparation, the tables were loaded into the Excel Data Model and relationships were established using Power Pivot.
 
-The relationships included:
+### Table Relationships
+
+The Sales table served as the central fact table, connected to the following dimension tables:
 
 - `Sales[CustomerKey]` → `Customers[CustomerKey]`
 - `Sales[ProductKey]` → `Products[ProductKey]`
@@ -81,7 +81,11 @@ The Exchange Rates and Data Dictionary tables were retained as reference tables.
 
 For additional details, see [Data Model Documentation](data-model/data-model-documentation.md).
 
-### 3. Calculated Metrics
+## Data Analysis and Calculated Metrics
+
+Data analysis was conducted using **Excel Data Model, PivotTables, calculated columns, and PivotCharts** to investigate sales performance and answer the identified business questions.
+
+### Calculated Metrics
 
 Calculated columns were created to estimate the financial performance of individual sales line items.
 
@@ -92,6 +96,19 @@ Calculated columns were created to estimate the financial performance of individ
 | Estimated Profit | Revenue − Total Cost |
 
 These calculations use the listed USD unit prices and unit costs in the Products table.
+
+### Analytical Procedures
+
+The analysis involved:
+
+- **Product Analysis:** Aggregating quantities sold to identify the highest-volume products.
+- **Category Performance Analysis:** Comparing estimated revenue, total cost, and profit across product categories.
+- **Geographic Analysis:** Using distinct order counts to examine order distribution by customer country.
+- **Time-Series Analysis:** Examining monthly sales activity and annual quantity patterns.
+- **Customer Analysis:** Comparing distinct order counts to identify customers with frequent purchasing activity.
+- **Performance Reporting:** Consolidating key performance indicators and analytical findings for dashboard presentation.
+
+PivotTables were used to aggregate and compare the data, while PivotCharts provided visual representations of the resulting insights.
 
 **Methodological Note:** The financial figures are estimates rather than verified accounting results. The calculations do not independently account for discounts, taxes, shipping costs, returns, or other transaction-level adjustments. They should therefore be interpreted as indicative measures of sales performance.
 
@@ -224,16 +241,16 @@ global-electronics-retail-analysis/
 
 ### Repository Contents
 
-- **README.md:** Project overview, methodology, analytical findings, and dashboard documentation.
+- **README.md:** Project overview, data cleaning and preparation process, analytical methodology, findings, and dashboard documentation.
 - **completed-workbook.xlsx:** Excel workbook containing the prepared data, Data Model, analyses, and interactive dashboard.
-- **executive-dashboard.png:** Executive dashboard preview.
+- **Executive-dashboard.png:** Executive dashboard preview.
 - **data-model/data-model-documentation.md:** Documentation of the Data Model, table roles, relationships, and relationship diagram.
 
 ## Conclusion
 
-This project demonstrates how Microsoft Excel can be used to transform raw business data into structured analysis and actionable business insights.
+This project demonstrates how Microsoft Excel can be used to transform raw business data into structured analysis and meaningful business insights.
 
-Through Power Query, the source tables were inspected and prepared for analysis. Power Pivot and the Excel Data Model enabled relational analysis across multiple datasets, while calculated columns, PivotTables, and PivotCharts supported the evaluation of sales performance.
+Through Power Query, the source tables were cleaned, inspected, and prepared for analysis. Power Pivot and the Excel Data Model enabled relational analysis across multiple datasets, while calculated columns, PivotTables, and PivotCharts supported the investigation of sales performance.
 
 The interactive executive dashboard brings the key findings together, making it easier to explore product performance, category contributions, geographic order distribution, and sales activity over time.
 
