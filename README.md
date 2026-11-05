@@ -213,12 +213,13 @@ The following considerations are important when interpreting the results:
 ```text
 global-electronics-retail-analysis/
 │
-├── README.md
-├── completed-workbook.xlsx
-├── executive-dashboard.png
+├── data-model/
+│   ├── data-model-documentation.md
+│   └── data-model-relationships.png
 │
-└── data-model/
-    └── data-model-documentation.md
+├── Executive-dashboard.png
+├── README.md
+└── completed-workbook.xlsx
 ```
 
 ### Repository Contents
