@@ -32,7 +32,7 @@ The Customers, Products, and Stores tables serve as lookup tables for analysing 
 
 The diagram below illustrates the structure of the model and the relationships between its tables.
 
-![Global Electronics Retailer Data Model](data-model/Data Model Relationships.png)
+![Global Electronics Retailer Data Model](data-model/data-model-relationships.png)
 
 ## Reference Table
 
