@@ -194,7 +194,7 @@ The dashboard incorporates interactive controls to support further exploration:
 
 ### Dashboard Preview
 
-![Global Electronics Retailer Executive Dashboard](executive-dashboard.png)
+![Global Electronics Retailer Executive Dashboard](Executive-dashboard.png)
 
 ## Limitations and Considerations
 
