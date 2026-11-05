@@ -215,15 +215,11 @@ The dashboard incorporates interactive controls to support further exploration:
 
 ## Limitations and Considerations
 
-The following considerations are important when interpreting the results:
-
-- **Fictional Business:** The dataset represents a fictional retailer. The findings should not be interpreted as the actual performance of a real electronics company.
-- **Estimated Financial Metrics:** Revenue, total cost, and profit are calculated from listed product prices and costs. They are not verified accounting figures.
-- **Currency Treatment:** Financial calculations use the listed USD unit prices and costs. A completed currency-conversion workflow using the Exchange Rates table was not implemented.
-- **Monthly Chart Measure:** The dashboard chart is titled "Monthly Sales Trend." Its underlying PivotTable value field should be checked before interpreting it specifically as quantity or revenue.
-- **Incomplete 2021 Data:** Only January and February are represented in the 2021 annual quantity totals. Comparisons with complete reporting years should account for this limitation.
-- **Returns Validation:** The negative-quantity check did not identify negative-quantity records. This does not establish that no returns occurred, as returns may be represented differently or excluded from the available dataset.
-- **Dataset Licence:** The source dataset's licence and applicable redistribution terms should be reviewed before sharing the original data or workbook publicly.
+- **Fictional Dataset:** Represents a fictional retailer, not an actual business.
+- **Estimated Metrics:** Revenue, cost, and profit are estimates, not verified accounting figures.
+- **Currency:** Analysis uses listed USD prices; currency conversion was not performed.
+- **2021 Data:** Only January and February records are available.
+- **Returns:** No negative quantities were identified, but this does not rule out returns.
 
 ## Project Structure
 
