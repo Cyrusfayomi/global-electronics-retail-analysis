@@ -237,10 +237,12 @@ global-electronics-retail-analysis/
 
 ### Repository Contents
 
-- **README.md:** Project overview, data cleaning and preparation process, analytical methodology, findings, and dashboard documentation.
-- **completed-workbook.xlsx:** Excel workbook containing the prepared data, Data Model, analyses, and interactive dashboard.
-- **Executive-dashboard.png:** Executive dashboard preview.
-- **data-model/data-model-documentation.md:** Documentation of the Data Model, table roles, relationships, and relationship diagram.
+- **README.md:** Project overview, data cleaning, preparation, analysis, key findings, and dashboard documentation.
+- **completed-workbook.xlsx:** Excel workbook containing the prepared data, Data Model, analysis, and interactive dashboard.
+- **Executive-dashboard.png:** Preview of the interactive executive dashboard.
+- **data-model/:** Contains the data model documentation and relationship diagram.
+  - **data-model-documentation.md:** Explains the data model, table roles, and relationships.
+  - **data-model-relationships.png:** Visual representation of the data model and table relationships.
 
 ## Conclusion
 
